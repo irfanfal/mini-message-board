@@ -3,3 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+ 
+  each x in message
+    div(class= "box")
+      p= x.text
+      p= x.user
+      p= x.added
+
+  div(class= 'button-container')
+    a(class='button',href='/new') New Message
+

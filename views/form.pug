@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+  h1 CONTOH
+
+  form(action='/new' method='POST' class="form")
+    h1 Tambah Pesan
+    div(class="input")
+      label(for="nama") Nama
+      input(type='text' id='username' name='username')
+      label(for="pesan") Pesan
+      textarea(id='message' name='message')
+
+    button(type="submit") SUBMIT
